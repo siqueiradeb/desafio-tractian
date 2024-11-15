@@ -1,16 +1,41 @@
-# desafio_tractian
+# Challenge Mobile - Tractian
 
-A new Flutter project.
+ Build an Tree View Application that shows companies Assets (The tree is basically composed with components, assets and locations)
 
-## Getting Started
+## Project Structure
+lib/blocs/: Contains the state management (BLoC) for the application.
 
-This project is a starting point for a Flutter application.
+lib/models/: Defines the data classes used in the project, such as Company, Location, and Asset.
 
-A few resources to get you started if this is your first Flutter project:
+lib/screens/: Contains the main application screens, including the home screen and the asset tree screen.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+lib/widgets/: Reusable and custom components, such as buttons and filter widgets.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies Used
+
+Flutter: Framework for building the user interface.
+
+Dart: Programming language.
+
+BLoC Pattern: For state management.
+
+Git: Version control for project development.
+
+# Future Improvements
+If there were more time for development, the following improvements could be implemented:
+
+Performance and Optimization: Improve data loading and filter efficiency.
+
+Animations and Visual Feedback: Add smooth animations for expanding the asset tree and display loading feedback.
+
+Unit and Integration Testing: Increase test coverage, especially for state management and key widgets.
+
+Internationalization (i18n): Support for multiple languages.
+
+## Obs:
+
+It is important to note that in the 'Energy Sensor' filter, the RT COAL AF01 motor is not included, as shown in the Figma design. Below is an image showing the API response where the RT COAL AF01 motor is not labeled as 'energy'.
+![Captura de tela 2024-11-14 1355224](https://github.com/user-attachments/assets/27b6a017-3490-455d-9dee-f519a081cc2c)
+
+## Demonstration
+https://drive.google.com/file/d/1HRR80aXjIRFHGx8mqxxjTgil-i4Bnt0Z/view?usp=sharing
