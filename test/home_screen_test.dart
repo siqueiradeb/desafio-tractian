@@ -61,7 +61,6 @@ void main() {
       ),
     );
 
-    // Verifica se os botões foram renderizados corretamente
     expect(find.byType(CustomElevatedButtonWidget), findsNWidgets(2));
     expect(find.text('Company A'), findsOneWidget);
     expect(find.text('Company B'), findsOneWidget);
@@ -69,7 +68,6 @@ void main() {
 
   testWidgets('Exibe SizedBox quando estado é inicial ou desconhecido',
       (WidgetTester tester) async {
-    // Emitindo o estado inicial CompanyInitial
     mockCompanyBloc.emit(CompanyInitial());
 
     await tester.pumpWidget(
@@ -80,8 +78,6 @@ void main() {
         ),
       ),
     );
-
-    // Verifica que o SizedBox está presente
     expect(find.byType(SizedBox), findsOneWidget);
   });
 }
