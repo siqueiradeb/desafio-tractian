@@ -16,7 +16,7 @@ class CustomElevatedButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 15.0),
       child: SizedBox(
         width: 400,
         height: 90,
@@ -44,12 +44,12 @@ class CustomElevatedButtonWidget extends StatelessWidget {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Icon(
-                Icons.apps, // Ícone similar
-                color: Colors.white,
-                size: 24, // Tamanho do ícone
+              Image.asset(
+                'assets/icon.png',
+                width: 24,
+                height: 24,
               ),
-              const SizedBox(width: 12), // Espaço entre o ícone e o texto
+              const SizedBox(width: 12),
               Text(
                 label ?? '',
                 style: const TextStyle(
@@ -57,7 +57,7 @@ class CustomElevatedButtonWidget extends StatelessWidget {
                   fontSize: 18,
                   fontWeight: FontWeight.w500,
                   height: 28 / 18,
-                  fontFamily: 'Roboto',
+                  // fontFamily: 'Roboto',
                 ),
               ),
             ],

@@ -53,11 +53,11 @@ class _FilterTagWidgetState extends State<FilterTagWidget> {
               // 'Sensor de Energia',
               widget.label,
               style: TextStyle(
-                color: _isActiveButton
-                    ? Colors.white
-                    : Colors.grey, // Cor do texto
-                fontSize: 16,
-              ),
+                  color: _isActiveButton
+                      ? Colors.white
+                      : Colors.grey, // Cor do texto
+                  fontSize: 16,
+                  fontFamily: 'Roboto'),
             ),
           ],
         ),

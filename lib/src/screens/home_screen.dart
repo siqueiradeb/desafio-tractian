@@ -12,7 +12,12 @@ class HomeScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xFF17192D),
+          backgroundColor: const Color(0xFF17192D),
+          centerTitle: true,
+          title: Image.asset(
+            'assets/logo.png',
+            height: 32,
+          ),
         ),
         body: SizedBox(
           height: MediaQuery.of(context).size.height,

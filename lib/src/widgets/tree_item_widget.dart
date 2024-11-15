@@ -29,7 +29,7 @@ class TreeItemWidget extends StatelessWidget {
               leading: Image.asset('assets/GoLocation.png'),
               title: Text(
                 mainLocation.name,
-                style: const TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(fontFamily: 'Roboto'),
               ),
               children: [
                 ...locations.map(
@@ -41,7 +41,7 @@ class TreeItemWidget extends StatelessWidget {
                           leading: Image.asset('assets/GoLocation.png'),
                           title: Text(
                             subLocal.name,
-                            style: const TextStyle(fontWeight: FontWeight.bold),
+                            style: const TextStyle(fontFamily: 'Roboto'),
                           ),
                           children: [
                             ...assets.map(
@@ -55,7 +55,7 @@ class TreeItemWidget extends StatelessWidget {
                                       title: Text(
                                         asset.name,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.bold),
+                                            fontFamily: 'Roboto'),
                                       ),
                                       children: [
                                         ...assets.map(
@@ -73,8 +73,7 @@ class TreeItemWidget extends StatelessWidget {
                                                   title: Text(
                                                     assetLevelTwo.name,
                                                     style: const TextStyle(
-                                                        fontWeight:
-                                                            FontWeight.bold),
+                                                        fontFamily: 'Roboto'),
                                                   ),
                                                   children: [
                                                     ...assets.map((subAsset) {
@@ -96,9 +95,8 @@ class TreeItemWidget extends StatelessWidget {
                                                                 Text(
                                                                   subAsset.name,
                                                                   style: const TextStyle(
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .bold),
+                                                                      fontFamily:
+                                                                          'Roboto'),
                                                                 ),
                                                                 Visibility(
                                                                   visible: subAsset
@@ -152,7 +150,7 @@ class TreeItemWidget extends StatelessWidget {
                         leading: Image.asset('assets/cubic.png'),
                         title: Text(
                           assetLocationRelation.name,
-                          style: const TextStyle(fontWeight: FontWeight.bold),
+                          style: const TextStyle(fontFamily: 'Roboto'),
                         ),
                         children: [
                           ...assets.map((subComponent) {
@@ -168,7 +166,7 @@ class TreeItemWidget extends StatelessWidget {
                                       Text(
                                         subComponent.name,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.bold),
+                                            fontFamily: 'Roboto'),
                                       ),
                                       Visibility(
                                           visible:
@@ -203,7 +201,7 @@ class TreeItemWidget extends StatelessWidget {
               children: [
                 Text(
                   component.name,
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontFamily: 'Roboto'),
                 ),
                 Image.asset(component.sensorType == 'energy'
                     ? 'assets/bolt.png'

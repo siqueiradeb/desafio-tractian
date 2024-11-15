@@ -22,7 +22,11 @@ class AssetTreeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Assets')),
+      appBar: AppBar(
+        title: const Text('Assets'),
+        backgroundColor: const Color(0xFF17192D),
+        foregroundColor: Colors.white,
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
