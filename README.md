@@ -12,9 +12,13 @@ lib/screens/: Contains the main application screens, including the home screen a
 lib/widgets/: Reusable and custom components, such as buttons and filter widgets.
 
 ## Technologies Used
+
 Flutter: Framework for building the user interface.
+
 Dart: Programming language.
+
 BLoC Pattern: For state management.
+
 Git: Version control for project development.
 
 # Future Improvements
