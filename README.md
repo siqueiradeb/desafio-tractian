@@ -1,4 +1,4 @@
-# Challenge Mobile - Tractian
+# Challenge Mobil - Tractian
 
  Build an Tree View Application that shows companies Assets (The tree is basically composed with components, assets and locations)
 
